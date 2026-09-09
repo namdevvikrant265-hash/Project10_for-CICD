@@ -7,14 +7,14 @@ terraform {
     }
   }
 
- backend "azurerm" {
-  storage_account_name = "backendstoragevik"
-  container_name       = "backendcontainer"
-  key                  = "prod.terraform.tfstate"
+  backend "azurerm" {
+    storage_account_name = "backendstoragevik"
+    container_name       = "backendcontainer"
+    key                  = "prod.terraform.tfstate"
 
-  use_azuread_auth = true
-}
+    use_azuread_auth = true
   }
+}
 
 
 provider "azurerm" {
